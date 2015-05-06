@@ -43,7 +43,7 @@ Take a look at `my_utils.js`. Right now it only has a `myEach` function. Add the
         // "<p>Words words words</p>"
     ```
 
-* Create a helper function which takes in a float and returns a currency amount.
+* Create a helper function which takes in a float and returns a currency amount (remove extra decimal places).
     ```
         myUtils.toDollarAmount(12.971)
         // 12.97
