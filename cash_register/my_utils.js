@@ -16,7 +16,6 @@
     }
     // myUtils.myMap
     // myUtils.myReduce
-    // myUtils.sort
     
     // myUtils.buildElement
     
