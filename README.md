@@ -7,7 +7,7 @@ Take a look at `my_utils.js`. Right now it only has a `myEach` function. Add the
 * Clone the `iterators_hmwk` repo from *your* gitHub account onto your computer.
 * Make changes to the files in your local repo.
 * `git add` and `git commit` your changes as you go.  Remember to say what you did in your commit messages!
-* Push your changes to update the repo on your gitHub account.
+* `git push` to update the repo on your gitHub account.
 * Submit the link to the `iterators_hmwk` repo on your gitHub account.
 
 ###Goals
