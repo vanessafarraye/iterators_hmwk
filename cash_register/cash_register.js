@@ -24,7 +24,7 @@ $(document).ready(function(){
    $subTotal = $('#subtotal');
 
   myUtils.myEach(line_items, function(v,i){
-    addItem(v.price, v.description)
+    addItem(v.price, v.description);
   });
 
   updateSubTotal();
