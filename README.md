@@ -2,6 +2,14 @@
 
 Take a look at `my_utils.js`. Right now it only has a `myEach` function. Add the other iterators you built during the lecture: i.e. `myMap`, `myReduce`. The goal of this exercise is for you to 1) use the utilities you've already built to solve the problems in this exercise, 2) build and extend the myUtils library with additional helper functions. You also get to practice jQuery!
 
+###Workflow & Submission
+* Fork this repository.
+* Clone the `iterators_hmwk` repo from *your* gitHub account onto your computer.
+* Make changes to the files in your local repo.
+* `git add` and `git commit` your changes as you go.  Remember to say what you did in your commit messages!
+* Push your changes to update the repo on your gitHub account.
+* Submit the link to the `iterators_hmwk` repo on your gitHub account.
+
 ###Goals
 
 * Use the iterators you've already built. Build new helper functions using your library (see below)!
