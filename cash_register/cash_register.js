@@ -1,7 +1,7 @@
 var line_items = [
     {description: "aardvark", price: 425, qty: 1},
     {description: "PruNe", price: 1.99, qty: 1},
-    {description: "potato", price: .79, qty: 10},
+    {description: "potato", price: .79, qty: -10},
     {description: "zebra", price: 525.25, qty: 1},
     {description: "SpinAch", price: 2.99, qty: 1},
     {description: "zepplin", price: 20000, qty: -1},
@@ -46,7 +46,3 @@ function addItem(price, title) {
 function updateSubTotal(price) {
   $subTotal.text("$" + price);
 }
-
-// function updateSalesTax() {}
-
-// function updateTotal() {}

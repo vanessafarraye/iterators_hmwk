@@ -1,24 +1,29 @@
 # Iterator Challenge
 
-Take a look at `my_utils.js`. Right now it only has a `myEach` function. Add the other iterators you built: i.e. `myMap`, `myReduce`. The goal of this exercise is for you to 1) use the utilities you've already built to solve the problems in this exersie, 2) build and extend the myUtils library with additional helper functions. You also get to practice jQuery!
-
+Take a look at `my_utils.js`. Right now it only has a `myEach` function. Add the other iterators you built during the lecture: i.e. `myMap`, `myReduce`. The goal of this exercise is for you to 1) use the utilities you've already built to solve the problems in this exercise, 2) build and extend the myUtils library with additional helper functions. You also get to practice jQuery!
 
 ###Goals
 
-* Use the iterators you've already built. Build new tools using your tools!
+* Use the iterators you've already built. Build new helper functions using your library (see below)!
 * By the end of this homework you should have used: `myReduce`, `myMap`, and `myEach` at a minimum!
 
-1. SubTotal is the sum of prices on the receipt
-1. Bonus: Sales Tax is 7.25%
-1. Bonus: The total should reflect SubTotal + Sales Tax
-1. Sort the receipt alphabetically
-1. Fix the random capitalization in titles.
-2. Returns / Refunds: If a number is negative, turn it red!
-1. Bonus: Zepplins are on sale! Filter for Zepplin in the title, discount them 10%.
-1. Bonus: Coupons! Check to see if any of the coupons apply to the line items.
-1. Super Bonus: Take a look at `cash_register.html`. See the commented out form element? Add it back in. Can you dynamically add items to the receipt?
 
-**Helper Functions**
+**Calucations**
+1. Set SUBTOTAL to the sum of the prices.
+2. Bonus: SALES TAX is 7.25%.
+3. Bonus: TOTAL should reflect SUBTOTAL + SALES TAX.
+
+**Formatting**
+4. Sort the receipt alphabetically.
+5. Fix the random capitalization in titles.
+6. Returns / Refunds: If a number is negative, turn it red!
+
+**Bonuses**
+7. Zepplins are on sale! Filter for Zepplin in the title, discount them 10%.
+8. Coupons! Check to see if any of the coupons apply to the line items.
+9. Super Bonus: Take a look at `cash_register.html`. See the commented out form element? Add it back in. Can you dynamically add items to the receipt?
+
+### Helper Functions
 
 * Create a helper functions which outputs html strings.
     ```
