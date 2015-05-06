@@ -1,50 +1,52 @@
-var runningTotal = 0,
-    $amountInput,
-    $nameInput,
-    $total,
-    $form,
-    $entries;
+var line_items = [
+    {description: "aardvark", price: 425, qty: 1},
+    {description: "PruNe", price: 1.99, qty: 1},
+    {description: "potato", price: .79, qty: 10},
+    {description: "zebra", price: 525.25, qty: 1},
+    {description: "SpinAch", price: 2.99, qty: 1},
+    {description: "zepplin", price: 20000, qty: -1},
+    {description: "PetUnia", price: 1.25, qty: 12},
+    {description: "squash", price: 2.35, qty: 3}
+]
+
+var coupons = [
+    {description: "Zebra", discount: 100, limit: 1},
+    {description: "squash", discount: 1.00, limit: 1},
+    {description: "mouse", discount: 2.00, limit: 10}
+]
+
+var $entries, 
+    $subTotal;
 
 $(document).ready(function(){
 
-  $amountInput = $("input#amountInput");
-  $nameInput = $("input#nameInput");
-  $total = $("#total");
-  $form = $("form");
-  $entries = $("#entries");
+   $entries = $("#entries");
+   $subTotal = $('#subtotal')
 
-  $form.on("submit", updateReceipt)
+  myUtils.myEach(line_items, function(v,i){
+    addItem(v.price, v.description)
+  })
+
+  updateSubTotal();
+
 
 })
 
-function getPrice() {
-  var currentInputAmount = $amountInput.val();
-  currentInputAmount = parseFloat(currentInputAmount) || 0;
-  return currentInputAmount;
-}
-
-function updateReceipt(event) {
-  event.preventDefault();
-  var price = getPrice();
-  var name = $nameInput.val();
-
-  if (!price || price < 0 || !name) {
-    return false;
-  }
-
-  addItem(price, name);
-  updateTotal(price);
-  $form.trigger("reset");
-}
-
 function addItem(price, title) {
-  var $itemTitle = $("<td>").text(title)
-  var $itemPrice = $("<td>").text(price)
-  var newRow = $("<tr>").append($itemTitle).append($itemPrice);
-  $entries.append(newRow);
+  // YUCK! Let's refactor this!
+  var html_string = (
+        "<tr>" +
+          "<td>" +  title + "</td>" +
+          "<td>" + price + "</td>" +
+        "</tr>"
+  );
+  $entries.append(html_string);
 }
 
-function updateTotal(price) {
-  runningTotal = runningTotal + price;
-  $total.text("$" + runningTotal.toFixed(2));
+function updateSubTotal(price) {
+  $subTotal.text("$" + price);
 }
+
+// function updateSalesTax() {}
+
+// function updateTotal() {}
