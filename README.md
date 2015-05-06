@@ -29,7 +29,7 @@ Take a look at `my_utils.js`. Right now it only has a `myEach` function. Add the
 
 4. Sort(!) the receipt alphabetically.
 5. Fix the random capitalization in titles.
-6. If the line items contain(!) a refund, print "Contains Refund" somewhere on the receipt.
+6. If any line items is a refund, print "Contains Refund" somewhere on the receipt.
 7. Returns / Refunds: If a number is negative, turn it red!
 
 **Bonuses**
