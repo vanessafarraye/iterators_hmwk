@@ -24,7 +24,7 @@ $(document).ready(function(){
    $subTotal = $('#subtotal');
 
   myUtils.myEach(line_items, function(v,i){
-    addItem(v.price, v.description);
+    addItem(v.price, v.description, v.qty);
   });
 
   updateSubTotal();
@@ -32,11 +32,12 @@ $(document).ready(function(){
 
 });
 
-function addItem(price, title) {
+function addItem(price, title, quantity) {
   // YUCK! Let's refactor this!
   var html_string = (
         "<tr>" +
           "<td>" +  title + "</td>" +
+          "<td>" + quantity + "</td>" +
           "<td>" + price + "</td>" +
         "</tr>"
   );
