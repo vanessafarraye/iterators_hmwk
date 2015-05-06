@@ -5,6 +5,7 @@ body {
   margin: 3em;
   padding: 0;
 }
+
 #register {
   width: 20em;
   margin: auto;
@@ -57,4 +58,8 @@ body {
 #entry input:focus {
   outline: none;
   border-color: rgba(255,255,255,.75);
+}
+
+#labels th {
+  text-align: right;
 }
