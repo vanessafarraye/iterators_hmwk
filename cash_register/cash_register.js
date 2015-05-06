@@ -7,13 +7,13 @@ var line_items = [
     {description: "zepplin", price: 20000, qty: 1},
     {description: "PetUnia", price: 1.25, qty: 12},
     {description: "squash", price: 2.35, qty: 3}
-]
+];
 
 var coupons = [
     {description: "Zebra", discount: 100, limit: 1},
     {description: "squash", discount: 1.00, limit: 1},
     {description: "mouse", discount: 2.00, limit: 10}
-]
+];
 
 var $entries, 
     $subTotal;
@@ -21,11 +21,11 @@ var $entries,
 $(document).ready(function(){
 
    $entries = $("#entries");
-   $subTotal = $('#subtotal')
+   $subTotal = $('#subtotal');
 
   myUtils.myEach(line_items, function(v,i){
     addItem(v.price, v.description)
-  })
+  });
 
   updateSubTotal();
 
