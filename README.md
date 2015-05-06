@@ -29,23 +29,23 @@ Take a look at `my_utils.js`. Right now it only has a `myEach` function. Add the
 
 ### Helper Functions
 
-* Create a helper functions which outputs html strings.
+* Create a helper function which takes in an HTML tag type and an inner HTML string and outputs an html element as a string.
     ```
         myUtils.buildElement("p", "Words words words")
         // "<p>Words words words</p>"
     ```
 
-* Create a helper function which takes a float and converts it to a currency amount
+* Create a helper function which takes in a float and returns a currency amount.
     ```
         myUtils.toDollarAmount(12.971)
         // 12.97
     ```
 
-* Create a helper function which takes a dollar amount and returns a correctly formatted string:
+* Create a helper function which takes in a float and a currency symbol and returns a correctly formatted currency string.
     ```
-        myUtils.toDollarAmount(12.971, "$")
+        myUtils.toCurrencyString(12.971, "$")
         // $12.97
 
-        myUtils.toDollarAmount(.97, "$")
+        myUtils.toCurrencyString(.97, "$")
         // $0.97
     ```
