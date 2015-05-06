@@ -5,7 +5,10 @@ Take a look at `my_utils.js`. Right now it only has a `myEach` function. Add the
 ###Workflow & Submission
 * Fork this repository.
 * Clone the `iterators_hmwk` repo from *your* gitHub account onto your computer.
-* Make changes to the files in your local repo.
+* Open `cash_register\cash_register.html` in your browser to see the current version of our site.
+* Make changes to the files in the `cash_register` subdirectory of your local repo:
+  * Write your new helper functions in `myUtils.js`.
+  * Add to `cash_register.js` to meet the goals below. Use the functions from your library!
 * `git add` and `git commit` your changes as you go.  Remember to say what you did in your commit messages!
 * `git push` to update the repo on your gitHub account.
 * Submit the link to the `iterators_hmwk` repo on your gitHub account.
@@ -36,6 +39,7 @@ Take a look at `my_utils.js`. Right now it only has a `myEach` function. Add the
 10. Super Bonus: Take a look at `cash_register.html`. See the commented out form element? Add it back in. Can you dynamically add items to the receipt?
 
 ### Helper Functions
+Write your new helper functions in `cash_register/myUtils.js`.
 
 * Create a helper function which takes in an HTML tag type and an inner HTML string and outputs an HTML element as a string.
     ```
