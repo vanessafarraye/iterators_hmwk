@@ -16,15 +16,16 @@ Take a look at `my_utils.js`. Right now it only has a `myEach` function. Add the
 
 **Formatting**
 
-4. Sort the receipt alphabetically.
+4. Sort(!) the receipt alphabetically.
 5. Fix the random capitalization in titles.
-6. Returns / Refunds: If a number is negative, turn it red!
+6. If the line items contain(!) a refund, print "Contains Refund" somewhere on the receipt.
+7. Returns / Refunds: If a number is negative, turn it red!
 
 **Bonuses**
 
-7. Zepplins are on sale! Filter for Zepplin in the title, discount them 10%.
-8. Coupons! Check to see if any of the coupons apply to the line items.
-9. Super Bonus: Take a look at `cash_register.html`. See the commented out form element? Add it back in. Can you dynamically add items to the receipt?
+8. Zepplins are on sale! Filter(!) for "Zepplin" in the title and discount them 10%.
+9. Coupons! Check to see if any of the coupons apply to the line items.
+10. Super Bonus: Take a look at `cash_register.html`. See the commented out form element? Add it back in. Can you dynamically add items to the receipt?
 
 ### Helper Functions
 
