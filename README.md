@@ -7,7 +7,7 @@ Take a look at `my_utils.js`. Right now it only has a `myEach` function. Add the
 * Clone the `iterators_hmwk` repo from *your* gitHub account onto your computer.
 * Open `cash_register\cash_register.html` in your browser to see the current version of our site.
 * Make changes to the files in the `cash_register` subdirectory of your local repo:
-  * Write your new helper functions in `myUtils.js`.
+  * Write your new helper functions in `my_utils.js`.
   * Add to `cash_register.js` to meet the goals below. Use the functions from your library!
 * `git add` and `git commit` your changes as you go.  Remember to say what you did in your commit messages!
 * `git push` to update the repo on your gitHub account.
