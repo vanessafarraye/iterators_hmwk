@@ -37,7 +37,7 @@ Take a look at `my_utils.js`. Right now it only has a `myEach` function. Add the
 
 ### Helper Functions
 
-* Create a helper function which takes in an HTML tag type and an inner HTML string and outputs an html element as a string.
+* Create a helper function which takes in an HTML tag type and an inner HTML string and outputs an HTML element as a string.
     ```
         myUtils.buildElement("p", "Words words words")
         // "<p>Words words words</p>"
