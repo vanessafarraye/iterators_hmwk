@@ -27,8 +27,7 @@ $(document).ready(function(){
     addItem(v.price, v.description);
   });
 
-  var subTotalPrice = 0; // !! That won't do! Calculate the actual subtotal.
-  updateSubTotal(subTotalPrice);
+  updateSubTotal();
 
 
 });
@@ -44,7 +43,8 @@ function addItem(price, title) {
   $entries.append(html_string);
 }
 
-function updateSubTotal(price) {
-  // Refactor this using one of our helper functions :D
+function updateSubTotal() {
+// Refactor this using our helper functions :D
+  var subTotalPrice = 0; // !! That won't do! Calculate the actual subtotal.
   $subTotal.text("$" + price); 
 }
