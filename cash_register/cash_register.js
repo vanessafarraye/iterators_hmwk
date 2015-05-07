@@ -24,7 +24,7 @@ $(document).ready(function(){
    $subTotal = $('#subtotal');
 
   myUtils.myEach(line_items, function(v,i){
-    addItem(v.price, v.description, v.qty);
+    addItem(v.price, v.description.toLowerCase(), v.qty);
   });
 
   updateSubTotal();
@@ -46,6 +46,26 @@ function addItem(price, title, quantity) {
 
 function updateSubTotal() {
 // Refactor this using our helper functions :D
-  var subTotalPrice = 0; // !! That won't do! Calculate the actual subtotal.
-  $subTotal.text("$" + price); 
+  var subTotalPrice = myUtils.myReduce(line_items, cb, 0); // !! That won't do! Calculate the actual subtotal.
+  $subTotal.text("$" + subTotalPrice); 
 }
+
+function cb(val, element) {
+  if (element.qty < 0) {
+    document.getElementById("refund").innerHTML = "Contains refund"
+  }
+  return val + element.price * element.qty;
+}
+
+line_items.sort(function compare(a, b) {
+  if (a.description.toLowerCase() < b.description.toLowerCase()) {
+    return -1;
+  }
+  else if (a.description.toLowerCase() > b.description.toLowerCase()) {
+    return 1;
+  } else {
+  // a must be equal to b
+  return 0;
+  }
+});
+
